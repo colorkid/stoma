@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>Повышение посещаемости стоматологической клиники</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+	<link rel="stylesheet" type="text/less" href="css/style.less">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<script src="js/jquery-3.2.0.min.js" type="text/javascript"></script>
+	<script src="js/jquery.viewportchecker.js" type="text/javascript"></script>
+	<script src="js/jquery.mask.min.js" type="text/javascript"></script>
+	<script src="less.js" type="text/javascript"></script>
+</head>
+  <body>
+  	<header class="header">
+  		<div class="wrapper">
+  			<div class="logo">logo</div>
+  			<nav class="header__nav">
+  				<ul class="header__ul">
+  					<li class="header__li"><a href="#" class="header__a">Преимущества</a></li>
+  					<li class="header__li"><a href="#" class="header__a">Цены</a></li>
+  					<li class="header__li"><a href="#" class="header__a">Оборудование</a></li>
+  					<li class="header__li"><a href="#" class="header__a">Врачи</a></li>
+  					<li class="header__li"><a href="#" class="header__a">Контакты</a></li>
+  				</ul>
+  			</nav>
+  			<div class="burger"><span class="burger__line"></span></div>
+  			<a href="tel:+78129545536" class="header__tel">+7 812 984 02 56</a>
+  		</div>
+  	</header>
+  	<main>
+  		<section class="section section--first">
+  			<div class="wrapper wrapper--first">
+  				<div class="section--first__left">
+  					<h1>Ультрозвуковая чистка зубов от - 1900 р.</h1>
+  					<p class="section--first__p">Мы предоставляем супер-пупер чистку зубов, записывайся слушай сейчас и получай супер цену, а то завтра будет дороже и Вася закажет за тебя.</p>
+  					<form action="form.php" method="post" class="form">
+  						<input type="tel" class="form__number" placeholder="Введите Ваш Телефон">
+  						<input type="submit" class="form__submit" value="Оставить заявку">
+  					</form>
+  					<div class="review">
+  						<div class="review__pic">
+  							<img src="img/alla.png" class="review__img">
+  						</div>
+  						<div class="review__right">
+  							<p class="review__description">Мы предоставляем супер-пупер чистку зубов, записывайся слушай сейчас и получай супер цену, а то завтра будет дороже и Вася закажет за тебя.</p>
+  							<a href="#" class="review__a">Все отзывы</a>
+  						</div>
+  					</div>
+  				</div>
+  				<div class="section--first__right"></div>
+  			</div>
+  		</section>
+  		<section class="section section--advantages">
+  			<div class="wrapper wrapper--advantages">
+  				<h2 class="h2--advantages">Почему нам доверяют</h2>
+  			</div>
+  		</section>
+  	</main>
+  	<script type="text/javascript">
+  		$(".burger").click(function(){
+  			$(this).toggleClass("burger--active");
+  			$(".header__nav").toggleClass("header__nav--active");
+  		});
+  	</script>
+  </body>
+</html>

@@ -1,4 +1,4 @@
-@font-face {
+/*@font-face {
     font-family: 'Lato';
     src: local('Lato Hairline'), local('Lato-Hairline'), url('latohairline.woff2') format('woff2'), url('latohairline.woff') format('woff'), url('latohairline.ttf') format('truetype');
     font-weight: 100;
@@ -21,79 +21,79 @@
     src: local('Lato Thin Italic'), local('Lato-ThinItalic'), url('latothinitalic.woff2') format('woff2'), url('latothinitalic.woff') format('woff'), url('latothinitalic.ttf') format('truetype');
     font-weight: 200;
     font-style: italic;
-}
+}*/
 @font-face {
     font-family: 'Lato';
     src: local('Lato Light'), local('Lato-Light'), url('latolight.woff2') format('woff2'), url('latolight.woff') format('woff'), url('latolight.ttf') format('truetype');
     font-weight: 300;
     font-style: normal;
 }
-@font-face {
+/*@font-face {
     font-family: 'Lato';
     src: local('Lato Light Italic'), local('Lato-LightItalic'), url('latolightitalic.woff2') format('woff2'), url('latolightitalic.woff') format('woff'), url('latolightitalic.ttf') format('truetype');
     font-weight: 300;
     font-style: italic;
-}
+}*/
 @font-face {
     font-family: 'Lato';
     src: local('Lato Regular'), local('Lato-Regular'), url('latoregular.woff2') format('woff2'), url('latoregular.woff') format('woff'), url('latoregular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
-}
+}/*
 @font-face {
     font-family: 'Lato';
     src: local('Lato Italic'), local('Lato-Italic'), url('latoitalic.woff2') format('woff2'), url('latoitalic.woff') format('woff'), url('latoitalic.ttf') format('truetype');
     font-weight: 400;
     font-style: italic;
-}
+}*/
 @font-face {
     font-family: 'Lato';
     src: local('Lato Medium'), local('Lato-Medium'), url('latomedium.woff2') format('woff2'), url('latomedium.woff') format('woff'), url('latomedium.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
-}
+}/*
 @font-face {
     font-family: 'Lato';
     src: local('Lato Medium Italic'), local('Lato-MediumItalic'), url('latomediumitalic.woff2') format('woff2'), url('latomediumitalic.woff') format('woff'), url('latomediumitalic.ttf') format('truetype');
     font-weight: 500;
     font-style: italic;
-}
+}*/
 @font-face {
     font-family: 'Lato';
     src: local('Lato Semibold'), local('Lato-Semibold'), url('latosemibold.woff2') format('woff2'), url('latosemibold.woff') format('woff'), url('latosemibold.ttf') format('truetype');
     font-weight: 600;
     font-style: normal;
-}
+}/*
 @font-face {
     font-family: 'Lato';
     src: local('Lato Semibold Italic'), local('Lato-SemiboldItalic'), url('latosemibolditalic.woff2') format('woff2'), url('latosemibolditalic.woff') format('woff'), url('latosemibolditalic.ttf') format('truetype');
     font-weight: 600;
     font-style: italic;
-}
+}*/
 @font-face {
     font-family: 'Lato';
     src: local('Lato Bold'), local('Lato-Bold'), url('latobold.woff2') format('woff2'), url('latobold.woff') format('woff'), url('latobold.ttf') format('truetype');
     font-weight: 700;
     font-style: normal;
-}
+}/*
 @font-face {
     font-family: 'Lato';
     src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url('latobolditalic.woff2') format('woff2'), url('latobolditalic.woff') format('woff'), url('latobolditalic.ttf') format('truetype');
     font-weight: 700;
     font-style: italic;
-}
+}*/
 @font-face {
     font-family: 'Lato';
     src: local('Lato Heavy'), local('Lato-Heavy'), url('latoheavy.woff2') format('woff2'), url('latoheavy.woff') format('woff'), url('latoheavy.ttf') format('truetype');
     font-weight: 800;
     font-style: normal;
-}
+}/*
 @font-face {
     font-family: 'Lato';
     src: local('Lato Heavy Italic'), local('Lato-HeavyItalic'), url('latoheavyitalic.woff2') format('woff2'), url('latoheavyitalic.woff') format('woff'), url('latoheavyitalic.ttf') format('truetype');
     font-weight: 800;
     font-style: italic;
-}
+}*/
 @font-face {
     font-family: 'Lato';
     src: local('Lato Black'), local('Lato-Black'), url('latoblack.woff2') format('woff2'), url('latoblack.woff') format('woff'), url('latoblack.ttf') format('truetype');
@@ -268,9 +268,11 @@ h1,h2{
 	color: #fff;
 }
 
+/*
 .burger{
 	display: none;
 }
+*/
 
 main{
 	display: flex;
@@ -307,6 +309,7 @@ main{
 .section--first__p{
 	margin-bottom: 30px;
 	margin-top: 20px;
+	line-height: 1.5;
 	font-size: 20px;
 	color: @second;
 }
@@ -428,13 +431,48 @@ main{
 }
 
 .wrapper--advantages{
+	flex-wrap: wrap;
 	padding: 80px 15px 80px 15px;
 }
 
 .h2--advantages{
 	width: 100%;
+	margin-bottom: 70px;
 	text-align: center;
 	color: #fff;
+}
+
+.advantages {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.advantage {
+    width: 31.3%;
+    margin: 0 10px 50px 10px;
+}
+
+.advantage__pic{
+	width: 45px;
+	height: 45px;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: 50%;
+	background-image: url("../img/signal-post.svg");
+}
+
+.advantage__title{
+	display: inline-block;
+	margin: 20px 0 15px 0;
+	font-weight: 700;
+	font-size: 19px;
+	color: #fff;
+}
+
+.advantage__description{
+	line-height: 1.6;
+	font-size: 17px;
+	color: rgba(255, 255, 255, 0.6);
 }
 
 @media (max-width: 1169px) {
@@ -457,8 +495,29 @@ main{
 	}
 
 	.header__nav {
-    	position: absolute;
+    	display: none;
 	}
+
+	.advantages{
+		justify-content: center;
+	}
+
+	.advantage{
+		width: 100%;
+		max-width: 300px;
+		margin: 0 20px 50px 20px;
+		text-align: center;
+	}
+
+	.advantage__pic{
+		margin: 0 auto;
+	}
+
+	.h2--advantages{
+		margin-bottom: 50px;
+	}
+
+	/*
 
 	.burger {
 	    display: block;
@@ -513,20 +572,7 @@ main{
 		&:after{
 			transform: rotate(45deg) translate(4px, 8px);
 		}
-	}
-
-	.header__ul{
-		flex-wrap: wrap;
-	}
-
-	.header__li {
-    	width: 100%;
-	}
-
-	.header__nav--active{
-		transform: translateY(20px);
-	}
-
+	}*/
 }
 
 @media (max-width: 767px){
@@ -563,5 +609,28 @@ main{
 	.review__right:before{
 		top: -22.5px;
 		left: ~"calc(50% - 7.5px)";
+	}
+
+	.wrapper--first{
+		padding-top: 30px;
+	}
+
+	.section--first__left{
+		margin-bottom: 30px;
+	}
+
+	.form{
+		margin-bottom: 30px;
+	}
+
+	.wrapper--advantages {
+    	padding: 40px 15px 40px 15px;
+	}
+
+}
+
+@media (max-width: 489px){
+	.advantage {
+	    margin: 0 15px 50px 14px;
 	}
 }

@@ -111,6 +111,7 @@
 
 @black: #3B434D; 
 @primary: #629FD1;
+@lightPrimari: #F3F8FD;
 @darkPrimary: darken(@primary, 5%);
 @second: #848f9a;
 @secondLight: #DBE1EB;
@@ -475,6 +476,59 @@ main{
 	color: rgba(255, 255, 255, 0.6);
 }
 
+.wrapper--price{
+	justify-content: center;
+	flex-wrap: wrap;
+	padding: 80px 15px 80px 15px;
+}
+
+.h2--price{
+	width: 100%;
+	margin-bottom: 70px;
+	text-align: center;
+}
+
+.price-table {
+    width: 100%;
+    max-width: 700px;
+}
+
+.price-table__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+	height: 50px;
+	padding: 0 15px;
+}
+
+.price-table__row:nth-child(2n){
+	background-color: @lightPrimari;
+}
+
+.price-table__row .price-table__cell:nth-child(2){
+	font-weight: 800;
+}
+
+.section--call-to-action{
+	background-color: @lightPrimari;
+}
+
+.wrapper--call-to-action{
+	.wrapper--first;
+}
+
+.section--call-to-action__left{
+	.section--first__left;
+}
+
+.section--call-to-action__p{
+	.section--first__p;
+}
+
+.h2__call-to-action{
+	font-size: 36px;
+}
+
 @media (max-width: 1169px) {
 	.section--first__right{
 		background-size: 500px;
@@ -515,6 +569,10 @@ main{
 
 	.h2--advantages{
 		margin-bottom: 50px;
+	}
+
+	.h2--price{
+		margin-bottom: 30px;
 	}
 
 	/*
@@ -623,14 +681,29 @@ main{
 		margin-bottom: 30px;
 	}
 
-	.wrapper--advantages {
+	.wrapper--advantages,
+	.wrapper--price {
     	padding: 40px 15px 40px 15px;
 	}
 
+	.price-table__row{
+		flex-wrap: wrap;
+		height: 90px;
+		padding: 15px 15px;
+		text-align: center;
+	}
+
+	.price-table__cell {
+    	width: 100%;
+	}
 }
 
 @media (max-width: 489px){
 	.advantage {
 	    margin: 0 15px 50px 14px;
+	}
+
+	.price-table__row{
+		height: 120px;
 	}
 }

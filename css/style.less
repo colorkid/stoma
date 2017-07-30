@@ -163,7 +163,8 @@ input[type="text"],
 input[type="tel"],
 input[type="email"],
 input[type="submit"],
-button{
+button,
+textarea{
   font-family: 'Lato', sans-serif;
 
   &:focus{
@@ -179,31 +180,35 @@ button{
   }
 }
 
-input::-webkit-input-placeholder{
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder{
   opacity: 1;
   font-size: 16px;
   color: @second;
 }
-input::-moz-placeholder{
+input::-moz-placeholder,
+textarea::-moz-placeholder{
   opacity: 1;
   font-size: 16px;
   color: @second;
 }
-input:-moz-placeholder{
+input:-moz-placeholder,
+textarea:-moz-placeholder{
   opacity: 1;
   font-size: 16px;
   color: @second;
 }
-input:-ms-input-placeholder{
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder{
   opacity: 1;
   font-size: 16px;
   color: @second;
 }
 
-input:focus::-webkit-input-placeholder {opacity: 0;}
-input:focus::-moz-placeholder          {opacity: 0;}
-input:focus:-moz-placeholder           {opacity: 0;}
-input:focus:-ms-input-placeholder {opacity: 0;}
+input:focus::-webkit-input-placeholder,textarea:focus::-webkit-input-placeholder {opacity: 0;}
+input:focus::-moz-placeholder,textarea:focus::-moz-placeholder          {opacity: 0;}
+input:focus:-moz-placeholder,textarea:focus:-moz-placeholder           {opacity: 0;}
+input:focus:-ms-input-placeholder,textarea:focus:-ms-input-placeholder {opacity: 0;}
 
 body{
   display: flex;
@@ -541,7 +546,7 @@ main{
 	background-image: url("../img/ulibkaone.png");
 }
 
-.wrapper.wrapper--team {
+.wrapper--team {
     flex-wrap: wrap;
     padding: 80px 15px;
 }
@@ -581,7 +586,7 @@ main{
 .team__position {
 	padding: 10px 0;
 	font-weight: 600;
-    font-size: 17px;
+    font-size: 16px;
     color: @second;
 }
 
@@ -721,6 +726,103 @@ main{
 	border-color: @primary;
 }
 
+.wrapper--contacts{
+	align-items: flex-start;
+	flex-wrap: wrap;
+	padding: 80px 15px;
+}
+
+.h2--contacts{
+	width: 100%;
+	margin-bottom: 70px;
+	text-align: center;
+}
+
+.wrapper-map-and-form{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.wrapper--contacts__left{
+	width: 50%;
+	margin-right: 15px;
+}
+
+.map{
+	border-radius: 4px;
+	overflow: hidden;
+	filter: grayscale(90%);
+}
+
+.wrapper--contacts__right{
+	width: 50%;
+	margin-left: 15px;
+}
+
+.adres {
+    display: flex;
+    width: 100%;
+}
+
+.adres__cell {
+    width: 50%;
+}
+
+.adres__row--name{
+	.team__name;
+}
+
+.adres__row--description{
+	.team__position;
+	line-height: 1.5;
+}
+
+.form--call-back{
+	flex-wrap: wrap;
+	margin-top: 35px;
+
+	input:not([type="submit"]){
+		.form__number;
+		width: 270px;
+
+		&:hover{
+			border-color: @second;
+		}
+	}
+}
+
+.form--call-back__title {
+	.team__name;
+	width: 100%;
+	padding-bottom: 20px;
+}
+
+.form__name{
+	margin-right: 30px;
+}
+
+.form__textarea{
+	width: 100%;
+	height: 150px;
+	margin-top: 30px;
+	padding: 15px;
+	border: 2px solid #dbe1eb;
+	border-radius: 4px;
+	font-size: 16px;
+	color: #848f9a;
+	transition: border 0.2s;
+	transition-timing-function: ease-in-out;
+
+	&:hover{
+		border-color: @second;
+	}
+}
+
+.form__submit--call-back{
+	height: 56px;
+	margin: 30px 0 0 0;
+}
 
 
 
@@ -730,37 +832,25 @@ main{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media (max-width: 1169px) {
+@media (max-width: 1199px) {
 	.section--first__right{
 		background-size: 500px;
+	}
+
+	.wrapper-map-and-form{
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+
+	.wrapper--contacts__left,
+	.wrapper--contacts__right{
+		width: 100%;
+		max-width: 570px;
+		margin: 30px 2.5%;
+	}
+
+	.form__submit--call-back {
+		width: 100%;
 	}
 }
 
@@ -819,7 +909,8 @@ main{
 		margin-bottom: 50px;
 	}
 
-	.h2--price{
+	.h2--price,
+	.h2--contacts{
 		margin-bottom: 30px;
 	}
 
@@ -940,7 +1031,10 @@ main{
 	}
 
 	.wrapper--advantages,
-	.wrapper--price {
+	.wrapper--price,
+	.wrapper--team,
+	.wrapper--clients,
+	.wrapper--contacts {
     	padding: 40px 15px 40px 15px;
 	}
 

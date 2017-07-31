@@ -857,9 +857,10 @@ main{
 
 .igree-block{
 	position: absolute;
-	bottom: -40px;
+	bottom: -45px;
 	left: 0;
 	width: 100%;
+	line-height: 1.4;
 	font-size: 12px;
 	color: lighten(@second, 5%);
 
@@ -871,6 +872,100 @@ main{
 .wrapper-igree{
 	max-width: 960px;
 }
+
+.section--about{
+	background-color: @lightPrimari;
+}
+
+.wrapper--about{
+	align-items: flex-start;
+	justify-content: center;
+	flex-wrap: wrap;
+	padding: 80px 15px 80px 15px;
+}
+
+.h2--about{
+	width: 100%;
+	margin-bottom: 70px;
+	text-align: center;
+}
+
+.section--about__left{
+	.section--first__left;
+}
+
+.section--about__p{
+	.section--first__p;
+	font-size: 18px;
+}
+
+.section--about__right{
+	.section--first__right;
+	min-height: 500px;
+	background-size: 325px;
+	background-position: right top;
+	background-image: url("../img/sert.jpg");
+}
+
+.facts {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 60px;
+}
+
+.fact {
+    display: flex;
+    flex-wrap: wrap;
+    width: 47.5%;
+
+    &:nth-child(1),
+    &:nth-child(2){
+    	margin-bottom: 60px;
+    }
+}
+
+.fact__pic{
+	width: 45px;
+	height: 45px;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: 50%;
+	background-image: url("file:///C:/Users/Rainbow/Desktop/stoma/img/signal-post--blue.svg");
+}
+
+.fact__title{
+	display: inline-block;
+	width: 100%;
+	margin: 20px 0 15px 0;
+	font-weight: 700;
+	font-size: 19px;
+}
+
+.fact__description{
+	line-height: 1.6;
+	font-size: 17px;
+	color: @second;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -921,14 +1016,34 @@ main{
 	}
 
 	.section--first__right,
-	.section--call-to-action__right{
+	.section--call-to-action__right,
+	.section--about__right{
 		display: none;
 	}
 
 	.section--first__left,
-	.section--call-to-action__left{
+	.section--call-to-action__left,
+	.section--about__left{
 		width: 100%;
 		text-align: center;
+	}
+
+	.section--about__left{
+		margin-bottom: 0;
+	}
+
+	.facts{
+		justify-content: center;
+	}
+
+	.fact{
+		width: 100%;
+		max-width: 300px;
+		margin: 0 20px 50px 20px;
+	}
+
+	.fact__pic{
+		margin: 0 auto;
 	}
 
 	.form{
@@ -967,7 +1082,8 @@ main{
 	}
 
 	.h2--price,
-	.h2--contacts{
+	.h2--contacts,
+	.h2--about{
 		margin-bottom: 30px;
 	}
 
@@ -1039,7 +1155,8 @@ main{
 	.wrapper--price,
 	.wrapper--team,
 	.wrapper--clients,
-	.wrapper--contacts {
+	.wrapper--contacts,
+	.wrapper--about {
     	padding: 40px 15px 40px 15px;
 	}
 

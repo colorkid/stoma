@@ -250,8 +250,17 @@ h1,h2{
 }
 
 .logo{
+	display: flex;
+	align-items: center;
+	min-height: 45px;
+	padding-left: 60px;
+	background-size: 45px;
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-image: url("../img/tooth.svg");
 	text-transform: uppercase;
 	font-size: 20px;
+	font-weight: 400;
 	color: #fff;
 }
 
@@ -465,7 +474,30 @@ main{
 	background-repeat: no-repeat;
 	background-size: 100%;
 	background-position: 50%;
-	background-image: url("../img/signal-post.svg");
+}
+
+.advantage__pic--germany{
+	background-image: url("../img/germany.svg");
+}
+
+.advantage__pic--japan{
+	background-image: url("../img/japan.svg");
+}
+
+.advantage__pic--italy{
+	background-image: url("../img/italy.svg");
+}
+
+.advantage__pic--experience{
+	background-image: url("../img/experience.svg");
+}
+
+.advantage__pic--world{
+	background-image: url("../img/world.svg");
+}
+
+.advantage__pic--friend{
+	background-image: url("../img/friend.svg");
 }
 
 .advantage__title{
@@ -892,6 +924,7 @@ main{
 
 .section--about__left{
 	.section--first__left;
+	width: 57.5%;
 }
 
 .section--about__p{
@@ -901,6 +934,7 @@ main{
 
 .section--about__right{
 	.section--first__right;
+	width: 42.5%;
 	min-height: 500px;
 	background-size: 325px;
 	background-position: right top;
@@ -910,6 +944,7 @@ main{
 .facts {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
     flex-wrap: wrap;
     margin-top: 60px;
 }
@@ -931,7 +966,22 @@ main{
 	background-repeat: no-repeat;
 	background-size: 100%;
 	background-position: 50%;
-	background-image: url("file:///C:/Users/Rainbow/Desktop/stoma/img/signal-post--blue.svg");
+}
+
+.fact__pic--users{
+	background-image: url("../img/users.svg");
+}
+
+.fact__personal{
+	background-image: url("../img/quality.svg");
+}
+
+.fact__pic--time{
+	background-image: url("../img/calendar.svg");
+}
+
+.fact__location{
+	background-image: url("../img/point.svg");
 }
 
 .fact__title{
@@ -947,6 +997,30 @@ main{
 	font-size: 17px;
 	color: @second;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1215,20 +1289,6 @@ main{
 	.adres__cell{
 		padding: 0 5px;
 	}
-}
-
-@media (max-width: 489px){
-	.advantage {
-	    margin: 0 15px 50px 14px;
-	}
-
-	.price-table__row{
-		height: 120px;
-	}
-
-	.section--call-to-action__left{
-		margin-bottom: 10px;
-	}
 
 	.footer{
 		height: 180px;
@@ -1249,5 +1309,24 @@ main{
 
 	.vk{
 		margin: 0 auto;
+	}
+}
+
+@media (max-width: 479px){
+	.advantage {
+	    margin: 0 15px 50px 14px;
+	}
+
+	.price-table__row{
+		height: 120px;
+	}
+
+	.section--call-to-action__left{
+		margin-bottom: 10px;
+	}
+
+	.logo{
+		padding-left: 0;
+		background: none;
 	}
 }

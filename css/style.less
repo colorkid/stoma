@@ -278,12 +278,6 @@ h1,h2{
 	color: #fff;
 }
 
-/*
-.burger{
-	display: none;
-}
-*/
-
 main{
 	display: flex;
 	justify-content: center;
@@ -328,6 +322,7 @@ main{
 .form {
     display: flex;
     margin-bottom: 60px;
+    position: relative;
 }
 
 .form__number{
@@ -841,9 +836,40 @@ main{
 	}
 }
 
+.vk{
+	width: 45px;
+	height: 45px;
+	border-radius: 50%;
+	background-repeat: no-repeat;
+	background-size: 25px;
+	background-position: 50%;
+	background-image: url("../img/vk.svg");
+	background-color: #507299;
+	overflow: hidden;
+	transition: background 0.2s; 
 
+	&:hover{
+		background-color: darken(#507299, 5%);
+	}
+}
 
+.igree-block{
+	position: absolute;
+	bottom: -40px;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	font-size: 12px;
+	color: @second;
 
+	.igree{
+		color: @primary;
+	}
+}
+
+.wrapper-igree{
+	max-width: 960px;
+}
 
 
 
@@ -951,63 +977,6 @@ main{
 	.team__person{
 		margin: 0 7.5% 45px 7.5%;
 	}
-
-	/*
-
-	.burger {
-	    display: block;
-	    width: 37px;
-		height: 31px;
-	    position: relative;
-	    cursor: pointer;
-	    order: 1;
-	}
-
-	.burger:before {
-	    content: "";
-	    position: absolute;
-	    left: 5px;
-	    bottom: 5px;
-	    width: 30px;
-	    height: 3px;
-	    background: #fff;
-	    transition: 0.2s;
-	}
-
-	.burger:after {
-	    content: "";
-	    position: absolute;
-	    left: 5px;
-	    bottom: 23px;
-	    width: 30px;
-	    height: 3px;
-	    background: #fff;
-	    transition: 0.2s;
-	}
-
-	.burger__line {
-	    width: 30px;
-	    height: 3px;
-	    position: absolute;
-	    left: 5px;
-	    bottom: 14px;
-	    background: #fff;
-	    transition: 0.2s;
-	}
-
-	.burger--active{
-		.burger__line{
-			opacity: 0;
-		}
-
-		&:before{
-			transform: rotate(-45deg) translate(5px, -9px);
-		}
-
-		&:after{
-			transform: rotate(45deg) translate(4px, 8px);
-		}
-	}*/
 }
 
 @media (max-width: 767px){
@@ -1136,5 +1105,22 @@ main{
 
 	.section--call-to-action__left{
 		margin-bottom: 10px;
+	}
+
+	.footer{
+		height: 180px;
+		text-align: center;
+
+		.logo{
+			margin: 0 auto;
+		}
+	}
+
+	.igree{
+		width: 100%;
+	}
+
+	.vk{
+		margin: 0 auto;
 	}
 }

@@ -295,11 +295,11 @@ main{
 .section--first__right{
 	width: 50%;
 	height: 100%;
+	min-height: 615px;
 	background-size: 550px;
 	background-repeat: no-repeat;
 	background-position: right bottom;
 	background-image: url("../img/ulibkaone2.png");
-	z-index: 1;
 }
 
 .wrapper--first{
@@ -539,6 +539,7 @@ main{
 
 .section--call-to-action__right{
 	.section--first__right;
+	min-height: 405px;
 	background-image: url("../img/ulibkaone.png");
 }
 
@@ -782,7 +783,7 @@ main{
 		.form__number;
 		width: 270px;
 
-		&:hover{
+		&:focus{
 			border-color: @second;
 		}
 	}
@@ -810,7 +811,7 @@ main{
 	transition: border 0.2s;
 	transition-timing-function: ease-in-out;
 
-	&:hover{
+	&:focus{
 		border-color: @second;
 	}
 }
